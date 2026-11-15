@@ -1,0 +1,10 @@
+{
+  "status": "passed",
+  "test": "d4_full_context_real_dclm_forward",
+  "shape": [
+    1,
+    1024
+  ],
+  "logits_max_abs_diff": 4.3272972106933594e-05,
+  "loss": 8.854772567749023
+}

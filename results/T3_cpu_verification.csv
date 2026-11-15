@@ -1,0 +1,3 @@
+run_dir,model,learning_rate,schedule,dropout,seed,num_train_sequences,precision,data_seed,final_eval_loss,tokens,wall_time_seconds,verification
+runs/T3-cpu/model-d4-lr0.003-tok1048576-evals1-accum8-807775957a-check-3-32-16,d4,0.003,linear,0.0,42,1024,mp,42,7.4509806632995605,6144,2.2720785840001554,True
+runs/T3-cpu/model-d4-lr0.003-tok20971520-evals4-accum8-2150dcb7e5-check-3-32-16,d4,0.003,linear,0.0,42,20480,mp,42,7.793494701385498,6144,1.354229707999366,True

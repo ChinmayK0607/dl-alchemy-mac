@@ -1,0 +1,100 @@
+{
+  "status": "passed",
+  "device": "cpu",
+  "real_data_checked": true,
+  "records": [
+    {
+      "test": "reference_defaults_and_depths",
+      "status": "passed",
+      "depths": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "test": "schedules_vs_reference",
+      "status": "passed",
+      "points": 294630,
+      "max_abs_diff": 1.788139345794415e-10
+    },
+    {
+      "test": "global_shuffle_prefix_vs_reference",
+      "status": "passed",
+      "batch_comparisons": 240,
+      "seeds": [
+        null,
+        0,
+        42,
+        123
+      ]
+    },
+    {
+      "test": "dropout_placement_shared_masks",
+      "status": "passed",
+      "sites": 6,
+      "logits_max_abs_diff": 1.8477439880371094e-06,
+      "grad_max_abs_diff": 2.5331974029541016e-07,
+      "eval_logits_max_abs_diff": 2.0265579223632812e-06
+    },
+    {
+      "test": "compiled_dropout_rng_and_eval",
+      "status": "passed",
+      "first_losses": [
+        4.960215091705322,
+        4.818493843078613
+      ],
+      "curve": [
+        5.185735702514648,
+        4.584040641784668,
+        4.18890905380249
+      ],
+      "reproducible": true
+    },
+    {
+      "test": "custom_optimizer_partial_accumulation",
+      "status": "passed",
+      "steps": 7,
+      "max_loss_diff": 2.384185791015625e-07,
+      "weight_max_abs_diff": 1.455843448638916e-05
+    },
+    {
+      "test": "eval_partial_batch_weighting",
+      "status": "passed",
+      "rows": 5,
+      "micro_batch": 2,
+      "result": 17.0
+    },
+    {
+      "test": "preset_intervals_and_run_names",
+      "status": "passed",
+      "local_steps": 320,
+      "local_interval": 81,
+      "smoke_steps": 16
+    },
+    {
+      "test": "runner_artifacts_and_checkpoint_reload",
+      "status": "passed",
+      "parameters": 5901056,
+      "eval_loss_abs_diff": 0.0,
+      "steps": 2,
+      "fixture": "synthetic",
+      "overwrite_protected": true
+    },
+    {
+      "test": "real_dclm_first_batches_token_exact",
+      "status": "passed",
+      "batch_comparisons": 43,
+      "prefixes": [
+        17,
+        1024,
+        20480,
+        100000
+      ],
+      "val_sequences": 1000
+    }
+  ]
+}

@@ -1,0 +1,119 @@
+{"test": "plan", "status": "passed", "runs": 37, "unique": true}
+{"test": "nonfinite_microbatch_stops_before_update", "status": "passed", "microbatches_executed": 1, "optimizer_updates": 0}
+{"status": "started", "run_dir": "/Users/chinmay/Documents/Codex/2026-07-16/can/dl-alchemy-mac/.build/tmp/t4_q0s2rggz/normal/reference-model-d4-lr0.003-tok131072-precisionfp32-evals1-accum8-200c2f5eab-check-2-8-9", "variant": "reference", "model_name": "d4", "learning_rate": 0.003, "num_epochs": 1.0, "batch_size": 64, "num_micro_batches": 8, "num_evals": 1, "warmup_percent": 0.01, "weight_decay": 0.1, "grad_norm": 1.0, "dropout": 0.0, "data_seed": 42, "model_seed": 42, "beta1": 0.9, "beta2": 0.95, "lr_schedule": "linear", "precision": "fp32", "num_train_sequences": 128, "eval_interval": null, "compiled": true, "chunk_size": 1024, "boundary": "micro", "checkpoint": false, "log_every": 10, "run_name_suffix": null, "run_name": "reference-model-d4-lr0.003-tok131072-precisionfp32-evals1-accum8-200c2f5eab-check-2-8-9", "device": "cpu", "model_config": {"name": "tiny", "vocab_size": 128, "context_length": 16, "hidden_size": 64, "intermediate_size": 224, "num_hidden_layers": 2, "num_attention_heads": 2, "num_key_value_heads": 2, "head_dim": 32, "max_position_embeddings": 131072}, "total_steps": 2, "eval_steps": 3, "micro_batch_size": 8, "parameter_count": 135616, "actual_model_seed": 42, "verification": true, "verification_context": 8, "verification_val_sequences": 9, "max_steps": 2, "data_dir": "data/dclm", "data_metadata": {"synthetic_test_fixture": true}, "mlx_version": "0.32.4", "numpy_version": "2.5.4", "preset": "local", "question_group": "q1", "code_hash": "3d864258365467ff475b7a0738e77df6229c7fe75fed9a773b2f65131ac8152e", "wandb_requested": "offline", "save_weights": false}
+2026/11/15 02:29:44 ERROR main: failed to get logger path error="error opening log file: open /Users/chinmay/Library/Caches/wandb/logs/core-debug-20261115_022944.log: operation not permitted"
+2026/11/15 02:29:44 WARN server/listeners: couldn't open Unix socket in os.TempDir() error="server/listeners: failed to open Unix socket on \"/Users/chinmay/Documents/Codex/2026-07-16/can/dl-alchemy-mac/.build/tmp/wandb-12452-12459-3689305889/socket\": listen unix /Users/chinmay/Documents/Codex/2026-07-16/can/dl-alchemy-mac/.build/tmp/wandb-12452-12459-3689305889/socket: bind: invalid argument"
+2026/11/15 02:29:44 INFO server: accepting connections addr=/tmp/wandb-12452-12459-1409822417/socket
+2026/11/15 02:29:44 INFO server: will exit if parent process dies ppid=12452
+2026/11/15 02:29:44 INFO connection: ManageConnectionData: new connection created id=1
+2026/11/15 02:29:44 INFO handleInformInit: received streamId=5iqc32li id=1
+2026/11/15 02:29:44 INFO handleInformInit: stream started streamId=5iqc32li id=1
+wandb: Tracking run with wandb version 0.31.0
+wandb: W&B syncing is set to `offline` in this directory. Run `wandb online` or set WANDB_MODE=online to enable cloud syncing.
+wandb: Run data is saved locally in /Users/chinmay/Documents/Codex/2026-07-16/can/dl-alchemy-mac/.build/tmp/t4_q0s2rggz/normal/reference-model-d4-lr0.003-tok131072-precisionfp32-evals1-accum8-200c2f5eab-check-2-8-9/wandb/offline-run-20261115_022944-5iqc32li
+wandb: View this run in the terminal with `wandb leet`
+{"step": 1, "train_loss": 5.0178070068359375, "lr": 0.003, "grad_norm": 43.482784271240234, "tokens": 512, "step_tokens": 512, "tokens_per_second": 4339.412064244231, "seconds_per_step": 0.11798833400007425, "wall_time_seconds": 1.1371959580001203}
+{"step": 2, "train_loss": 2.674649953842163, "lr": 0.0015, "grad_norm": 25.980600357055664, "tokens": 1024, "step_tokens": 512, "tokens_per_second": 23059.64358789792, "seconds_per_step": 0.02220329200008564, "wall_time_seconds": 1.235602041000675, "eval_loss": 1.8143103122711182, "val_loss": 1.8143103122711182, "eval_seconds": 0.02132295800038264}
+wandb: 
+wandb: Run history:
+wandb:         eval_loss ▁
+wandb:      eval_seconds ▁
+wandb:         grad_norm █▁
+wandb:                lr █▁
+wandb:  seconds_per_step █▁
+wandb:              step ▁█
+wandb:       step_tokens ▁▁
+wandb:            tokens ▁█
+wandb: tokens_per_second ▁█
+wandb:        train_loss █▁
+wandb:                +2 ...
+wandb: 
+wandb: Run summary:
+wandb:   best_val_loss 1.81431
+wandb:       code_hash 3d864258365467ff475b...
+wandb:       eval_loss 1.81431
+wandb:    eval_seconds 0.02132
+wandb: final_eval_loss 1.81431
+wandb:  final_val_loss 1.81431
+wandb:       grad_norm 25.9806
+wandb:   learning_rate 0.003
+wandb:              lr 0.0015
+wandb: parameter_count 135616
+wandb:             +18 ...
+wandb: 
+wandb: You can sync this run to the cloud by running:
+wandb: wandb sync /Users/chinmay/Documents/Codex/2026-07-16/can/dl-alchemy-mac/.build/tmp/t4_q0s2rggz/normal/reference-model-d4-lr0.003-tok131072-precisionfp32-evals1-accum8-200c2f5eab-check-2-8-9/wandb/offline-run-20261115_022944-5iqc32li
+wandb: Find logs at: ./.build/tmp/t4_q0s2rggz/normal/reference-model-d4-lr0.003-tok131072-precisionfp32-evals1-accum8-200c2f5eab-check-2-8-9/wandb/offline-run-20261115_022944-5iqc32li/logs
+2026/11/15 02:29:45 INFO handleInformFinish: finish message received streamId=5iqc32li id=1
+{"status": "verification_complete", "run_dir": "/Users/chinmay/Documents/Codex/2026-07-16/can/dl-alchemy-mac/.build/tmp/t4_q0s2rggz/normal/reference-model-d4-lr0.003-tok131072-precisionfp32-evals1-accum8-200c2f5eab-check-2-8-9", "variant": "reference", "learning_rate": 0.003, "preset": "local", "question_group": "q1", "code_hash": "3d864258365467ff475b7a0738e77df6229c7fe75fed9a773b2f65131ac8152e", "steps": 2, "tokens": 1024, "final_eval_loss": 1.8143103122711182, "final_val_loss": 1.8143103122711182, "best_val_loss": 1.8143103122711182, "train_seconds": 0.14019162600015989, "eval_seconds": 0.02132295800038264, "wall_time_seconds": 1.2368156660004388, "tokens_per_second": 7304.287918016103, "peak_memory_bytes": 5902608, "parameter_count": 135616, "error": null, "verification": true, "wandb_mode": "offline", "wandb_error": null}
+2026/11/15 02:29:45 INFO handleInformFinish: stream closed streamId=5iqc32li id=1
+{"test": "real_offline_wandb_no_default_weights", "status": "passed", "steps": 2, "final_val_loss": 1.8143103122711182}
+{"status": "started", "run_dir": "/Users/chinmay/Documents/Codex/2026-07-16/can/dl-alchemy-mac/.build/tmp/t4_q0s2rggz/diverged/reference-model-d4-lr0.003-tok131072-precisionfp32-evals1-accum8-200c2f5eab-check-2-8-9", "variant": "reference", "model_name": "d4", "learning_rate": 0.003, "num_epochs": 1.0, "batch_size": 64, "num_micro_batches": 8, "num_evals": 1, "warmup_percent": 0.01, "weight_decay": 0.1, "grad_norm": 1.0, "dropout": 0.0, "data_seed": 42, "model_seed": 42, "beta1": 0.9, "beta2": 0.95, "lr_schedule": "linear", "precision": "fp32", "num_train_sequences": 128, "eval_interval": null, "compiled": true, "chunk_size": 1024, "boundary": "micro", "checkpoint": false, "log_every": 10, "run_name_suffix": null, "run_name": "reference-model-d4-lr0.003-tok131072-precisionfp32-evals1-accum8-200c2f5eab-check-2-8-9", "device": "cpu", "model_config": {"name": "tiny", "vocab_size": 128, "context_length": 16, "hidden_size": 64, "intermediate_size": 224, "num_hidden_layers": 2, "num_attention_heads": 2, "num_key_value_heads": 2, "head_dim": 32, "max_position_embeddings": 131072}, "total_steps": 2, "eval_steps": 3, "micro_batch_size": 8, "parameter_count": 135616, "actual_model_seed": 42, "verification": true, "verification_context": 8, "verification_val_sequences": 9, "max_steps": 2, "data_dir": "data/dclm", "data_metadata": {"synthetic_test_fixture": true}, "mlx_version": "0.32.4", "numpy_version": "2.5.4", "preset": "local", "question_group": "q1", "code_hash": "3d864258365467ff475b7a0738e77df6229c7fe75fed9a773b2f65131ac8152e", "wandb_requested": "offline", "save_weights": true}
+2026/11/15 02:29:45 INFO handleInformInit: received streamId=7d3tn6qu id=1
+2026/11/15 02:29:45 INFO handleInformInit: stream started streamId=7d3tn6qu id=1
+wandb: Tracking run with wandb version 0.31.0
+wandb: W&B syncing is set to `offline` in this directory. Run `wandb online` or set WANDB_MODE=online to enable cloud syncing.
+wandb: Run data is saved locally in /Users/chinmay/Documents/Codex/2026-07-16/can/dl-alchemy-mac/.build/tmp/t4_q0s2rggz/diverged/reference-model-d4-lr0.003-tok131072-precisionfp32-evals1-accum8-200c2f5eab-check-2-8-9/wandb/offline-run-20261115_022945-7d3tn6qu
+wandb: View this run in the terminal with `wandb leet`
+{"step": 1, "train_loss": NaN, "lr": 0.003, "grad_norm": 0.0, "tokens": 512, "step_tokens": 512, "tokens_per_second": 2602287.1636271384, "seconds_per_step": 0.00019675000021379674, "wall_time_seconds": 0.11879825000050914}
+wandb: 
+wandb: Run history:
+wandb:         grad_norm ▁
+wandb:                lr ▁
+wandb:  seconds_per_step ▁
+wandb:              step ▁
+wandb:       step_tokens ▁
+wandb:            tokens ▁
+wandb: tokens_per_second ▁
+wandb: wall_time_seconds ▁
+wandb:                +1 ...
+wandb: 
+wandb: Run summary:
+wandb:         code_hash 3d864258365467ff475b...
+wandb:      eval_seconds 0
+wandb:         grad_norm 0
+wandb:     learning_rate 0.003
+wandb:                lr 0.003
+wandb:   parameter_count 135616
+wandb: peak_memory_bytes 3256864
+wandb:            preset local
+wandb:    question_group q1
+wandb:           run_dir /Users/chinmay/Docum...
+wandb:               +13 ...
+wandb: 
+wandb: You can sync this run to the cloud by running:
+wandb: wandb sync /Users/chinmay/Documents/Codex/2026-07-16/can/dl-alchemy-mac/.build/tmp/t4_q0s2rggz/diverged/reference-model-d4-lr0.003-tok131072-precisionfp32-evals1-accum8-200c2f5eab-check-2-8-9/wandb/offline-run-20261115_022945-7d3tn6qu
+wandb: Find logs at: ./.build/tmp/t4_q0s2rggz/diverged/reference-model-d4-lr0.003-tok131072-precisionfp32-evals1-accum8-200c2f5eab-check-2-8-9/wandb/offline-run-20261115_022945-7d3tn6qu/logs
+2026/11/15 02:29:45 INFO handleInformFinish: finish message received streamId=7d3tn6qu id=1
+{"status": "diverged", "run_dir": "/Users/chinmay/Documents/Codex/2026-07-16/can/dl-alchemy-mac/.build/tmp/t4_q0s2rggz/diverged/reference-model-d4-lr0.003-tok131072-precisionfp32-evals1-accum8-200c2f5eab-check-2-8-9", "variant": "reference", "learning_rate": 0.003, "preset": "local", "question_group": "q1", "code_hash": "3d864258365467ff475b7a0738e77df6229c7fe75fed9a773b2f65131ac8152e", "steps": 1, "tokens": 512, "final_eval_loss": NaN, "final_val_loss": NaN, "best_val_loss": NaN, "train_seconds": 0.00019675000021379674, "eval_seconds": 0.0, "wall_time_seconds": 0.1200433330004671, "tokens_per_second": 2602287.1636271384, "peak_memory_bytes": 3256864, "parameter_count": 135616, "error": null, "verification": true, "wandb_mode": "offline", "wandb_error": null}
+2026/11/15 02:29:45 INFO handleInformFinish: stream closed streamId=7d3tn6qu id=1
+{"status": "started", "run_dir": "/Users/chinmay/Documents/Codex/2026-07-16/can/dl-alchemy-mac/.build/tmp/t4_q0s2rggz/error/reference-model-d4-lr0.003-tok131072-precisionfp32-evals1-accum8-200c2f5eab-check-2-8-9", "variant": "reference", "model_name": "d4", "learning_rate": 0.003, "num_epochs": 1.0, "batch_size": 64, "num_micro_batches": 8, "num_evals": 1, "warmup_percent": 0.01, "weight_decay": 0.1, "grad_norm": 1.0, "dropout": 0.0, "data_seed": 42, "model_seed": 42, "beta1": 0.9, "beta2": 0.95, "lr_schedule": "linear", "precision": "fp32", "num_train_sequences": 128, "eval_interval": null, "compiled": true, "chunk_size": 1024, "boundary": "micro", "checkpoint": false, "log_every": 10, "run_name_suffix": null, "run_name": "reference-model-d4-lr0.003-tok131072-precisionfp32-evals1-accum8-200c2f5eab-check-2-8-9", "device": "cpu", "model_config": {"name": "tiny", "vocab_size": 128, "context_length": 16, "hidden_size": 64, "intermediate_size": 224, "num_hidden_layers": 2, "num_attention_heads": 2, "num_key_value_heads": 2, "head_dim": 32, "max_position_embeddings": 131072}, "total_steps": 2, "eval_steps": 3, "micro_batch_size": 8, "parameter_count": 135616, "actual_model_seed": 42, "verification": true, "verification_context": 8, "verification_val_sequences": 9, "max_steps": 2, "data_dir": "data/dclm", "data_metadata": {"synthetic_test_fixture": true}, "mlx_version": "0.32.4", "numpy_version": "2.5.4", "preset": "local", "question_group": "q1", "code_hash": "3d864258365467ff475b7a0738e77df6229c7fe75fed9a773b2f65131ac8152e", "wandb_requested": "disabled", "save_weights": false}
+{"status": "error", "run_dir": "/Users/chinmay/Documents/Codex/2026-07-16/can/dl-alchemy-mac/.build/tmp/t4_q0s2rggz/error/reference-model-d4-lr0.003-tok131072-precisionfp32-evals1-accum8-200c2f5eab-check-2-8-9", "variant": "reference", "learning_rate": 0.003, "preset": "local", "question_group": "q1", "code_hash": "3d864258365467ff475b7a0738e77df6229c7fe75fed9a773b2f65131ac8152e", "steps": 0, "tokens": 0, "final_eval_loss": NaN, "final_val_loss": NaN, "best_val_loss": NaN, "train_seconds": 0.0, "eval_seconds": 0.0, "wall_time_seconds": 0.005890125000405533, "tokens_per_second": 0, "peak_memory_bytes": 3258912, "parameter_count": 135616, "error": "RuntimeError: injected failure", "verification": true, "wandb_mode": "disabled", "wandb_error": null}
+{"test": "divergence_and_error_finalization", "status": "passed", "diverged_steps": 1, "weights_saved": false}
+/Users/chinmay/Documents/Codex/2026-07-16/can/dl-alchemy-mac/mlx_port/tracking.py:32: UserWarning: Online W&B init failed; falling back to offline: simulated init failure
+  warnings.warn(f"Online W&B init failed; falling back to offline: {exc}")
+{"test": "mocked_online_fallback", "status": "passed", "actual_online_runs": 0}
+[1/2] error; ETA 0.0 min
+{"index": 0, "config": {"preset": "local", "variant": "bad", "question_group": "q1"}, "device": "cpu", "status": "error", "error": "ValueError: Unknown architecture variant", "final_val_loss": NaN, "worker_wall_seconds": 2.5041999833774753e-05}
+[2/2] verification_complete; ETA 0.0 min
+{"index": 1, "config": {"variant": "no_attention", "model_name": "d4", "learning_rate": 0.003, "num_epochs": 1.0, "batch_size": 64, "num_micro_batches": 8, "num_evals": 4, "warmup_percent": 0.01, "weight_decay": 0.1, "grad_norm": 1.0, "dropout": 0.0, "data_seed": 42, "model_seed": 42, "beta1": 0.9, "beta2": 0.95, "lr_schedule": "linear", "precision": "mp", "num_train_sequences": 128, "eval_interval": null, "compiled": true, "chunk_size": 1024, "boundary": "micro", "checkpoint": false, "log_every": 10, "run_name_suffix": null}, "device": "cpu", "preset": "local", "question_group": "q1", "run_dir": "/Users/chinmay/Documents/Codex/2026-07-16/can/dl-alchemy-mac/.build/tmp/t4_q0s2rggz/queue/no_attention-model-d4-lr0.003-tok131072-evals4-accum8-66bdeae82a-check-1-8-9", "log": "/Users/chinmay/Documents/Codex/2026-07-16/can/dl-alchemy-mac/.build/tmp/t4_q0s2rggz/queue/no_attention-model-d4-lr0.003-tok131072-evals4-accum8-66bdeae82a-check-1-8-9/worker.log", "returncode": 0, "status": "verification_complete", "variant": "no_attention", "learning_rate": 0.003, "code_hash": "3d864258365467ff475b7a0738e77df6229c7fe75fed9a773b2f65131ac8152e", "steps": 1, "tokens": 512, "final_eval_loss": 8.547491921318901, "final_val_loss": 8.547491921318901, "best_val_loss": 8.547491921318901, "train_seconds": 0.23216195900022285, "eval_seconds": 0.01784287500049686, "wall_time_seconds": 0.3255828749997818, "tokens_per_second": 2205.356993905744, "peak_memory_bytes": 176234606, "parameter_count": 5901056, "error": null, "verification": true, "wandb_mode": "disabled", "wandb_error": null, "worker_wall_seconds": 0.5976935419994334}
+[1/2] error; ETA 0.0 min
+{"index": 0, "config": {"preset": "local", "variant": "bad", "question_group": "q1"}, "device": "cpu", "status": "error", "error": "ValueError: Unknown architecture variant", "final_val_loss": NaN, "worker_wall_seconds": 3.566699979273835e-05}
+[2/2] verification_complete (existing summary); ETA 0.0 min
+{"index": 1, "config": {"variant": "no_attention", "model_name": "d4", "learning_rate": 0.003, "num_epochs": 1.0, "batch_size": 64, "num_micro_batches": 8, "num_evals": 4, "warmup_percent": 0.01, "weight_decay": 0.1, "grad_norm": 1.0, "dropout": 0.0, "data_seed": 42, "model_seed": 42, "beta1": 0.9, "beta2": 0.95, "lr_schedule": "linear", "precision": "mp", "num_train_sequences": 128, "eval_interval": null, "compiled": true, "chunk_size": 1024, "boundary": "micro", "checkpoint": false, "log_every": 10, "run_name_suffix": null}, "device": "cpu", "preset": "local", "question_group": "q1", "run_dir": "/Users/chinmay/Documents/Codex/2026-07-16/can/dl-alchemy-mac/.build/tmp/t4_q0s2rggz/queue/no_attention-model-d4-lr0.003-tok131072-evals4-accum8-66bdeae82a-check-1-8-9", "status": "verification_complete", "variant": "no_attention", "learning_rate": 0.003, "code_hash": "3d864258365467ff475b7a0738e77df6229c7fe75fed9a773b2f65131ac8152e", "steps": 1, "tokens": 512, "final_eval_loss": 8.547491921318901, "final_val_loss": 8.547491921318901, "best_val_loss": 8.547491921318901, "train_seconds": 0.23216195900022285, "eval_seconds": 0.01784287500049686, "wall_time_seconds": 0.3255828749997818, "tokens_per_second": 2205.356993905744, "peak_memory_bytes": 176234606, "parameter_count": 5901056, "error": null, "verification": true, "wandb_mode": "disabled", "wandb_error": null, "skipped": true, "worker_wall_seconds": 0.0003222500008632778}
+[1/2] timeout; ETA 0.0 min
+{"index": 0, "config": {"variant": "no_mlp", "model_name": "d4", "learning_rate": 0.001, "num_epochs": 1.0, "batch_size": 64, "num_micro_batches": 8, "num_evals": 4, "warmup_percent": 0.01, "weight_decay": 0.1, "grad_norm": 1.0, "dropout": 0.0, "data_seed": 42, "model_seed": 42, "beta1": 0.9, "beta2": 0.95, "lr_schedule": "linear", "precision": "mp", "num_train_sequences": 128, "eval_interval": null, "compiled": true, "chunk_size": 1024, "boundary": "micro", "checkpoint": false, "log_every": 10, "run_name_suffix": null}, "device": "cpu", "preset": "local", "question_group": "q1", "run_dir": "/Users/chinmay/Documents/Codex/2026-07-16/can/dl-alchemy-mac/.build/tmp/t4_q0s2rggz/queue/no_mlp-model-d4-lr0.001-tok131072-evals4-accum8-ccae9bbeb3-check-1-8-9", "log": "/Users/chinmay/Documents/Codex/2026-07-16/can/dl-alchemy-mac/.build/tmp/t4_q0s2rggz/queue/no_mlp-model-d4-lr0.001-tok131072-evals4-accum8-ccae9bbeb3-check-1-8-9/worker.log", "status": "timeout", "error": "Exceeded 120.0 seconds", "final_val_loss": NaN, "best_val_loss": NaN, "wall_time_seconds": 0.0004777920003107283, "worker_wall_seconds": 0.0007257080005729222}
+[2/2] verification_complete; ETA 0.0 min
+{"index": 1, "config": {"variant": "reference", "model_name": "d4", "learning_rate": 0.001, "num_epochs": 1.0, "batch_size": 64, "num_micro_batches": 8, "num_evals": 4, "warmup_percent": 0.01, "weight_decay": 0.1, "grad_norm": 1.0, "dropout": 0.0, "data_seed": 42, "model_seed": 42, "beta1": 0.9, "beta2": 0.95, "lr_schedule": "linear", "precision": "mp", "num_train_sequences": 128, "eval_interval": null, "compiled": true, "chunk_size": 1024, "boundary": "micro", "checkpoint": false, "log_every": 10, "run_name_suffix": null}, "device": "cpu", "preset": "local", "question_group": "q1", "run_dir": "/Users/chinmay/Documents/Codex/2026-07-16/can/dl-alchemy-mac/.build/tmp/t4_q0s2rggz/queue/reference-model-d4-lr0.001-tok131072-evals4-accum8-a9c9b43f50-check-1-8-9", "log": "/Users/chinmay/Documents/Codex/2026-07-16/can/dl-alchemy-mac/.build/tmp/t4_q0s2rggz/queue/reference-model-d4-lr0.001-tok131072-evals4-accum8-a9c9b43f50-check-1-8-9/worker.log", "returncode": 0, "status": "verification_complete", "variant": "reference", "learning_rate": 0.001, "code_hash": "3d864258365467ff475b7a0738e77df6229c7fe75fed9a773b2f65131ac8152e", "steps": 1, "tokens": 512, "final_eval_loss": 8.19408655166626, "final_val_loss": 8.19408655166626, "best_val_loss": 8.19408655166626, "train_seconds": 0.3319666670004153, "eval_seconds": 0.03963254100017366, "wall_time_seconds": 0.44554512500053534, "tokens_per_second": 1542.323524907877, "peak_memory_bytes": 188835968, "parameter_count": 5901056, "error": null, "verification": true, "wandb_mode": "disabled", "wandb_error": null, "worker_wall_seconds": 0.6706963329997961}
+{"test": "isolated_queue_failure_timeout_resume", "status": "passed", "statuses": ["error", "verification_complete", "timeout", "verification_complete"]}
+{"test": "actual_subprocess_timeout", "status": "passed", "timeout_seconds": 0.05}
+{"test": "summary_dedup_q1_q2_and_plots", "status": "passed", "synthetic": true, "delta_loss": -0.10000000000000053}
+2026/11/15 02:29:48 INFO handleInformTeardown: server teardown initiated id=1
+2026/11/15 02:29:48 INFO handleInformTeardown: server shutdown complete id=1
+2026/11/15 02:29:48 INFO connection: closing id=1
+2026/11/15 02:29:48 INFO processOutgoingData: finished id=1
+2026/11/15 02:29:48 INFO server: is shutting down
+2026/11/15 02:29:48 INFO connection: closed successfully id=1
+2026/11/15 02:29:48 INFO connection: ManageConnectionData: connection closed id=1
+2026/11/15 02:29:48 INFO server: listener closed addr=/tmp/wandb-12452-12459-1409822417/socket
+2026/11/15 02:29:48 INFO server: all connections closed

@@ -1,0 +1,56 @@
+{
+  "status": "passed",
+  "device": "cpu",
+  "records": [
+    {
+      "test": "plan",
+      "status": "passed",
+      "runs": 37,
+      "unique": true
+    },
+    {
+      "test": "nonfinite_microbatch_stops_before_update",
+      "status": "passed",
+      "microbatches_executed": 1,
+      "optimizer_updates": 0
+    },
+    {
+      "test": "real_offline_wandb_no_default_weights",
+      "status": "passed",
+      "steps": 2,
+      "final_val_loss": 1.8143103122711182
+    },
+    {
+      "test": "divergence_and_error_finalization",
+      "status": "passed",
+      "diverged_steps": 1,
+      "weights_saved": false
+    },
+    {
+      "test": "mocked_online_fallback",
+      "status": "passed",
+      "actual_online_runs": 0
+    },
+    {
+      "test": "isolated_queue_failure_timeout_resume",
+      "status": "passed",
+      "statuses": [
+        "error",
+        "verification_complete",
+        "timeout",
+        "verification_complete"
+      ]
+    },
+    {
+      "test": "actual_subprocess_timeout",
+      "status": "passed",
+      "timeout_seconds": 0.05
+    },
+    {
+      "test": "summary_dedup_q1_q2_and_plots",
+      "status": "passed",
+      "synthetic": true,
+      "delta_loss": -0.10000000000000053
+    }
+  ]
+}

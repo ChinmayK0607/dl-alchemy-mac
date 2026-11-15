@@ -1,0 +1,7 @@
+{
+  "split": "validation",
+  "sequences": 1000,
+  "next_tokens": 1023000,
+  "unigram_entropy_nats": 6.844139339952997,
+  "unique_tokens": 3937
+}

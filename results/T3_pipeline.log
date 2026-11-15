@@ -1,0 +1,13 @@
+START T3_cpu_smoke
+{"command": ["-m", "mlx_port.run", "--preset", "smoke", "--device", "cpu", "--max-steps", "3", "--verification-context", "32", "--verification-val-sequences", "16", "--output-dir", "runs/T3-cpu"], "returncode": 0, "wall_seconds": 2.466029332999824}
+START T3_cpu_local
+{"command": ["-m", "mlx_port.run", "--preset", "local", "--device", "cpu", "--max-steps", "3", "--verification-context", "32", "--verification-val-sequences", "16", "--output-dir", "runs/T3-cpu"], "returncode": 0, "wall_seconds": 1.5664655830005358}
+START T3_tests
+{"command": ["-m", "mlx_port.test_t3"], "returncode": 0, "wall_seconds": 7.049974374999692}
+START T3_baseline
+{"command": ["-m", "mlx_port.baseline"], "returncode": 0, "wall_seconds": 0.2521958329998597}
+START T3_cpu_sweep
+{"command": ["-m", "mlx_port.sweep", "--preset", "local", "--device", "cpu", "--configs", "results/T3_cpu_grid.json", "--max-steps", "2", "--verification-context", "32", "--verification-val-sequences", "16", "--output-dir", "runs/T3-cpu-sweep", "--results", "results/T3_cpu_sweep.jsonl", "--timeout", "120"], "returncode": 0, "wall_seconds": 9.56609804100026}
+START T3_plot_check
+{"command": ["-m", "mlx_port.plot_runs", "--runs-dir", "runs/T3-cpu", "--include-verification", "--output", "results/T3_cpu_verification.png"], "returncode": 0, "wall_seconds": 21.391222666999965}
+ALL_PIPELINE_CHECKS_PASSED

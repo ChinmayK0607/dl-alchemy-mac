@@ -1,0 +1,19 @@
+{
+  "status": "passed",
+  "checks": {
+    "portable_unit_tests": 7,
+    "torch_cpu_checks": 41,
+    "maximum_torch_gradient_error": 2.980232238769531e-07,
+    "reference_default_fields": 17,
+    "total_steps": 9375,
+    "eval_interval": 94,
+    "fresh_default_uv_sync": "passed",
+    "fresh_training_without_reference_or_torch": "passed",
+    "lock_check": "passed",
+    "shell_syntax": "passed",
+    "python_compileall": "passed",
+    "machine_specific_path_scan": "no matches in source, tests, plans or READMEs",
+    "mlx_cpu_tests": "blocked at normal MLX import: no Metal device available"
+  },
+  "portable_test_output": "test_gpu_check_reports_worker_failure_and_continues (mlx_port.test_portable.PortableTests.test_gpu_check_reports_worker_failure_and_continues) ... ok\ntest_invalid_or_unavailable_memory_limits (mlx_port.test_portable.PortableTests.test_invalid_or_unavailable_memory_limits) ... ok\ntest_memory_scales_and_override_wins (mlx_port.test_portable.PortableTests.test_memory_scales_and_override_wins) ... ok\ntest_reference_precedence_and_errors (mlx_port.test_portable.PortableTests.test_reference_precedence_and_errors) ... ok\ntest_relocated_training_imports_and_queue_without_reference_or_torch (mlx_port.test_portable.PortableTests.test_relocated_training_imports_and_queue_without_reference_or_torch) ... ok\ntest_setup_is_repeatable_and_forwards_options (mlx_port.test_portable.PortableTests.test_setup_is_repeatable_and_forwards_options) ... ok\ntest_test_device_preserves_default_unless_requested (mlx_port.test_portable.PortableTests.test_test_device_preserves_default_unless_requested) ... ok\n\n----------------------------------------------------------------------\nRan 7 tests in 0.532s\n\nOK\n"
+}

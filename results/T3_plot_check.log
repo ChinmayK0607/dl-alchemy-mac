@@ -1,0 +1,7 @@
+
+Fontconfig error: No writable cache directories
+	/opt/homebrew/var/cache/fontconfig
+	/Users/chinmay/.cache/fontconfig
+	/Users/chinmay/.fontconfig
+Matplotlib is building the font cache; this may take a moment.
+{"output": "results/T3_cpu_verification.png", "csv": "results/T3_cpu_verification.csv", "rows": 2}

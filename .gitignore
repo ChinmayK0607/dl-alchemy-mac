@@ -1,0 +1,13 @@
+.venv/
+data/
+runs/
+wandb/
+__pycache__/
+*.py[cod]
+.build/
+*.safetensors
+logs/
+torch_mps/.cache/
+.DS_Store
+core
+core.*

@@ -1,0 +1,17 @@
+[
+  {
+    "dropout": 1
+  },
+  {
+    "learning_rate": 0.001,
+    "lr_schedule": "cos",
+    "dropout": 0.1,
+    "run_name_suffix": "cpu-grid"
+  },
+  {
+    "learning_rate": 0.003,
+    "lr_schedule": "wsd0.1",
+    "dropout": 0.0,
+    "run_name_suffix": "cpu-grid"
+  }
+]

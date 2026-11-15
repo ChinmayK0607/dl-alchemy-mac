@@ -1,0 +1,62 @@
+usage: run.py [-h] [--preset {reference,local,smoke}] [--config CONFIG]
+              [--device {cpu,gpu}] [--data-dir DATA_DIR]
+              [--output-dir OUTPUT_DIR] [--depth DEPTH]
+              [--micro-batch MICRO_BATCH] [--model-name MODEL_NAME]
+              [--learning-rate LEARNING_RATE] [--num-epochs NUM_EPOCHS]
+              [--batch-size BATCH_SIZE]
+              [--num-micro-batches NUM_MICRO_BATCHES] [--num-evals NUM_EVALS]
+              [--warmup-percent WARMUP_PERCENT] [--weight-decay WEIGHT_DECAY]
+              [--grad-norm GRAD_NORM] [--dropout DROPOUT]
+              [--data-seed DATA_SEED] [--model-seed MODEL_SEED]
+              [--beta1 BETA1] [--beta2 BETA2] [--lr-schedule LR_SCHEDULE]
+              [--precision PRECISION]
+              [--num-train-sequences NUM_TRAIN_SEQUENCES]
+              [--eval-interval EVAL_INTERVAL] [--compiled | --no-compiled]
+              [--chunk-size CHUNK_SIZE] [--boundary BOUNDARY]
+              [--checkpoint | --no-checkpoint] [--log-every LOG_EVERY]
+              [--run-name-suffix RUN_NAME_SUFFIX] [--max-steps MAX_STEPS]
+              [--verification-context VERIFICATION_CONTEXT]
+              [--verification-val-sequences VERIFICATION_VAL_SEQUENCES]
+
+Train real DCLM: python -m mlx_port.run --preset local --device gpu.
+
+options:
+  -h, --help            show this help message and exit
+  --preset {reference,local,smoke}
+  --config CONFIG       JSON object of TrainConfig fields
+  --device {cpu,gpu}
+  --data-dir DATA_DIR
+  --output-dir OUTPUT_DIR
+  --depth DEPTH         Alias for model_name=dN
+  --micro-batch MICRO_BATCH
+                        Alias for batch_size/num_micro_batches
+  --model-name MODEL_NAME
+  --learning-rate LEARNING_RATE
+  --num-epochs NUM_EPOCHS
+  --batch-size BATCH_SIZE
+  --num-micro-batches NUM_MICRO_BATCHES
+  --num-evals NUM_EVALS
+  --warmup-percent WARMUP_PERCENT
+  --weight-decay WEIGHT_DECAY
+  --grad-norm GRAD_NORM
+  --dropout DROPOUT
+  --data-seed DATA_SEED
+  --model-seed MODEL_SEED
+  --beta1 BETA1
+  --beta2 BETA2
+  --lr-schedule LR_SCHEDULE
+  --precision PRECISION
+  --num-train-sequences NUM_TRAIN_SEQUENCES
+  --eval-interval EVAL_INTERVAL
+  --compiled, --no-compiled
+  --chunk-size CHUNK_SIZE
+  --boundary BOUNDARY
+  --checkpoint, --no-checkpoint
+  --log-every LOG_EVERY
+  --run-name-suffix RUN_NAME_SUFFIX
+  --max-steps MAX_STEPS
+                        Truncate for pipeline checks; marked verification
+  --verification-context VERIFICATION_CONTEXT
+                        CPU-only crop for fast correctness checks
+  --verification-val-sequences VERIFICATION_VAL_SEQUENCES
+                        CPU-only eval subset

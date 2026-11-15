@@ -1,0 +1,32 @@
+{"test": "reference_defaults_and_depths", "status": "passed", "depths": [4, 5, 6, 7, 8, 9]}
+{"test": "schedules_vs_reference", "status": "passed", "points": 294630, "max_abs_diff": 1.788139345794415e-10}
+Materializing data_seed=0 from base dataset /Users/chinmay/Documents/Codex/2026-07-16/can/dl-alchemy-mac/.build/tmp/t3data_jhpqg33r: 23 rows.
+  materialized 23/23 rows in 0.0s
+Materializing data_seed=0 from base dataset /Users/chinmay/Documents/Codex/2026-07-16/can/dl-alchemy-mac/.build/tmp/t3data_jhpqg33r: 128 rows.
+  materialized 128/128 rows in 0.0s
+Materializing data_seed=0 from base dataset /Users/chinmay/Documents/Codex/2026-07-16/can/dl-alchemy-mac/.build/tmp/t3data_jhpqg33r: 257 rows.
+  materialized 257/257 rows in 0.0s
+Materializing data_seed=42 from base dataset /Users/chinmay/Documents/Codex/2026-07-16/can/dl-alchemy-mac/.build/tmp/t3data_jhpqg33r: 23 rows.
+  materialized 23/23 rows in 0.0s
+Materializing data_seed=42 from base dataset /Users/chinmay/Documents/Codex/2026-07-16/can/dl-alchemy-mac/.build/tmp/t3data_jhpqg33r: 128 rows.
+  materialized 128/128 rows in 0.0s
+Materializing data_seed=42 from base dataset /Users/chinmay/Documents/Codex/2026-07-16/can/dl-alchemy-mac/.build/tmp/t3data_jhpqg33r: 257 rows.
+  materialized 257/257 rows in 0.0s
+Materializing data_seed=123 from base dataset /Users/chinmay/Documents/Codex/2026-07-16/can/dl-alchemy-mac/.build/tmp/t3data_jhpqg33r: 23 rows.
+  materialized 23/23 rows in 0.0s
+Materializing data_seed=123 from base dataset /Users/chinmay/Documents/Codex/2026-07-16/can/dl-alchemy-mac/.build/tmp/t3data_jhpqg33r: 128 rows.
+  materialized 128/128 rows in 0.0s
+Materializing data_seed=123 from base dataset /Users/chinmay/Documents/Codex/2026-07-16/can/dl-alchemy-mac/.build/tmp/t3data_jhpqg33r: 257 rows.
+  materialized 257/257 rows in 0.0s
+{"test": "global_shuffle_prefix_vs_reference", "status": "passed", "batch_comparisons": 240, "seeds": [null, 0, 42, 123]}
+{"test": "dropout_placement_shared_masks", "status": "passed", "sites": 6, "logits_max_abs_diff": 1.8477439880371094e-06, "grad_max_abs_diff": 2.5331974029541016e-07, "eval_logits_max_abs_diff": 2.0265579223632812e-06}
+{"test": "compiled_dropout_rng_and_eval", "status": "passed", "first_losses": [4.960215091705322, 4.818493843078613], "curve": [5.185735702514648, 4.584040641784668, 4.18890905380249], "reproducible": true}
+{"test": "custom_optimizer_partial_accumulation", "status": "passed", "steps": 7, "max_loss_diff": 2.384185791015625e-07, "weight_max_abs_diff": 1.455843448638916e-05}
+{"test": "eval_partial_batch_weighting", "status": "passed", "rows": 5, "micro_batch": 2, "result": 17.0}
+{"test": "preset_intervals_and_run_names", "status": "passed", "local_steps": 320, "local_interval": 81, "smoke_steps": 16}
+{"status": "started", "run_dir": "/Users/chinmay/Documents/Codex/2026-07-16/can/dl-alchemy-mac/.build/tmp/t3runner_85n7kgxo/runs/reference-model-d4-lr0.003-tok20971520-evals4-accum8-62708bc12a-check-2-16-9", "variant": "reference", "model_name": "d4", "learning_rate": 0.003, "num_epochs": 1.0, "batch_size": 64, "num_micro_batches": 8, "num_evals": 4, "warmup_percent": 0.01, "weight_decay": 0.1, "grad_norm": 1.0, "dropout": 0.0, "data_seed": 42, "model_seed": 42, "beta1": 0.9, "beta2": 0.95, "lr_schedule": "linear", "precision": "mp", "num_train_sequences": 20480, "eval_interval": null, "compiled": true, "chunk_size": 1024, "boundary": "micro", "checkpoint": false, "log_every": 10, "run_name_suffix": null, "run_name": "reference-model-d4-lr0.003-tok20971520-evals4-accum8-62708bc12a-check-2-16-9", "device": "cpu", "model_config": {"name": "d4", "vocab_size": 4096, "context_length": 1024, "hidden_size": 256, "intermediate_size": 896, "num_hidden_layers": 4, "num_attention_heads": 4, "num_key_value_heads": 4, "head_dim": 64, "max_position_embeddings": 131072}, "total_steps": 320, "eval_steps": 81, "micro_batch_size": 8, "parameter_count": 5901056, "actual_model_seed": 42, "verification": true, "verification_context": 16, "verification_val_sequences": 9, "max_steps": 2, "data_dir": "/Users/chinmay/Documents/Codex/2026-07-16/can/dl-alchemy-mac/.build/tmp/t3runner_85n7kgxo/data", "data_metadata": {"num_sequences": 20480, "seq_len": 1024, "dtype": "uint16", "data_seed": 42, "synthetic_test_fixture": true}, "mlx_version": "0.32.4", "numpy_version": "2.5.4", "preset": "local", "question_group": "q1", "code_hash": "3d864258365467ff475b7a0738e77df6229c7fe75fed9a773b2f65131ac8152e", "wandb_requested": "disabled", "save_weights": true}
+{"step": 1, "train_loss": 9.274497032165527, "lr": 0.0, "grad_norm": 162.20388793945312, "tokens": 1024, "step_tokens": 1024, "tokens_per_second": 2985.569268430047, "seconds_per_step": 0.34298316600052203, "wall_time_seconds": 0.39730904099997133}
+{"step": 2, "train_loss": 9.274497032165527, "lr": 0.001, "grad_norm": 162.20388793945312, "tokens": 2048, "step_tokens": 1024, "tokens_per_second": 3274.212062786152, "seconds_per_step": 0.3127469999999448, "wall_time_seconds": 0.7637437909997971, "eval_loss": 6.008547306060791, "val_loss": 6.008547306060791, "eval_seconds": 0.05345583300004364}
+{"status": "verification_complete", "run_dir": "/Users/chinmay/Documents/Codex/2026-07-16/can/dl-alchemy-mac/.build/tmp/t3runner_85n7kgxo/runs/reference-model-d4-lr0.003-tok20971520-evals4-accum8-62708bc12a-check-2-16-9", "variant": "reference", "learning_rate": 0.003, "preset": "local", "question_group": "q1", "code_hash": "3d864258365467ff475b7a0738e77df6229c7fe75fed9a773b2f65131ac8152e", "steps": 2, "tokens": 2048, "final_eval_loss": 6.008547306060791, "final_val_loss": 6.008547306060791, "best_val_loss": 6.008547306060791, "train_seconds": 0.6557301660004669, "eval_seconds": 0.05345583300004364, "wall_time_seconds": 0.7697390829998767, "tokens_per_second": 3123.235907372518, "peak_memory_bytes": 191093684, "parameter_count": 5901056, "error": null, "verification": true, "wandb_mode": "disabled", "wandb_error": null}
+{"test": "runner_artifacts_and_checkpoint_reload", "status": "passed", "parameters": 5901056, "eval_loss_abs_diff": 0.0, "steps": 2, "fixture": "synthetic", "overwrite_protected": true}
+{"test": "real_dclm_first_batches_token_exact", "status": "passed", "batch_comparisons": 43, "prefixes": [17, 1024, 20480, 100000], "val_sequences": 1000}

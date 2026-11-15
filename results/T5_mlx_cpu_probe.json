@@ -1,0 +1,6 @@
+{
+  "command": "MLX_DEVICE=cpu python -c \"import mlx.core as mx; mx.set_default_device(mx.cpu); print(mx.array([1, 2])+1)\"",
+  "returncode": 1,
+  "stdout": "",
+  "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\nImportError: [metal::load_device] No Metal device available. This typically occurs in headless, sandboxed, or virtualized macOS sessions where the GPU is not accessible.\n"
+}

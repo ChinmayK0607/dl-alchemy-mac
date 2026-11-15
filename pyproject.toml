@@ -1,0 +1,17 @@
+[project]
+name = "dl-alchemy-mac"
+version = "0.1.0"
+description = "Portable Apple Silicon MLX training and PyTorch MPS parity benchmarks for Deep Learning Alchemy A1"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "mlx==0.32.4",
+    "numpy==2.5.4",
+    "matplotlib==3.11.2",
+    "wandb==0.31.0",
+]
+
+[project.optional-dependencies]
+parity = ["torch==2.15.0"]
+
+[tool.uv]
+package = false

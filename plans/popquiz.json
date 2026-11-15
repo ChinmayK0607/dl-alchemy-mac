@@ -1,0 +1,224 @@
+[
+  {
+    "preset": "local",
+    "variant": "reference",
+    "learning_rate": 0.003,
+    "question_group": "q1"
+  },
+  {
+    "preset": "local",
+    "variant": "no_prenorm",
+    "learning_rate": 0.003,
+    "question_group": "q1"
+  },
+  {
+    "preset": "local",
+    "variant": "no_residuals",
+    "learning_rate": 0.003,
+    "question_group": "q1"
+  },
+  {
+    "preset": "local",
+    "variant": "no_mlp",
+    "learning_rate": 0.003,
+    "question_group": "q1"
+  },
+  {
+    "preset": "local",
+    "variant": "no_attention",
+    "learning_rate": 0.003,
+    "question_group": "q1"
+  },
+  {
+    "preset": "local",
+    "variant": "no_rope",
+    "learning_rate": 0.003,
+    "question_group": "q1"
+  },
+  {
+    "preset": "local",
+    "variant": "mixed_residual",
+    "learning_rate": 0.003,
+    "question_group": "q2"
+  },
+  {
+    "preset": "local",
+    "variant": "reference",
+    "learning_rate": 0.001,
+    "question_group": "q1"
+  },
+  {
+    "preset": "local",
+    "variant": "no_prenorm",
+    "learning_rate": 0.001,
+    "question_group": "q1"
+  },
+  {
+    "preset": "local",
+    "variant": "no_residuals",
+    "learning_rate": 0.001,
+    "question_group": "q1"
+  },
+  {
+    "preset": "local",
+    "variant": "no_mlp",
+    "learning_rate": 0.001,
+    "question_group": "q1"
+  },
+  {
+    "preset": "local",
+    "variant": "no_attention",
+    "learning_rate": 0.001,
+    "question_group": "q1"
+  },
+  {
+    "preset": "local",
+    "variant": "no_rope",
+    "learning_rate": 0.001,
+    "question_group": "q1"
+  },
+  {
+    "preset": "local",
+    "variant": "mixed_residual",
+    "learning_rate": 0.001,
+    "question_group": "q2"
+  },
+  {
+    "preset": "local",
+    "variant": "reference",
+    "learning_rate": 0.01,
+    "question_group": "q1"
+  },
+  {
+    "preset": "local",
+    "variant": "no_prenorm",
+    "learning_rate": 0.01,
+    "question_group": "q1"
+  },
+  {
+    "preset": "local",
+    "variant": "no_residuals",
+    "learning_rate": 0.01,
+    "question_group": "q1"
+  },
+  {
+    "preset": "local",
+    "variant": "no_mlp",
+    "learning_rate": 0.01,
+    "question_group": "q1"
+  },
+  {
+    "preset": "local",
+    "variant": "no_attention",
+    "learning_rate": 0.01,
+    "question_group": "q1"
+  },
+  {
+    "preset": "local",
+    "variant": "no_rope",
+    "learning_rate": 0.01,
+    "question_group": "q1"
+  },
+  {
+    "preset": "local",
+    "variant": "mixed_residual",
+    "learning_rate": 0.01,
+    "question_group": "q2"
+  },
+  {
+    "preset": "local",
+    "variant": "reference",
+    "learning_rate": 0.0003,
+    "question_group": "q1"
+  },
+  {
+    "preset": "local",
+    "variant": "no_prenorm",
+    "learning_rate": 0.0003,
+    "question_group": "q1"
+  },
+  {
+    "preset": "local",
+    "variant": "no_residuals",
+    "learning_rate": 0.0003,
+    "question_group": "q1"
+  },
+  {
+    "preset": "local",
+    "variant": "no_mlp",
+    "learning_rate": 0.0003,
+    "question_group": "q1"
+  },
+  {
+    "preset": "local",
+    "variant": "no_attention",
+    "learning_rate": 0.0003,
+    "question_group": "q1"
+  },
+  {
+    "preset": "local",
+    "variant": "no_rope",
+    "learning_rate": 0.0003,
+    "question_group": "q1"
+  },
+  {
+    "preset": "local",
+    "variant": "mixed_residual",
+    "learning_rate": 0.0003,
+    "question_group": "q2"
+  },
+  {
+    "preset": "local",
+    "variant": "reference",
+    "learning_rate": 0.03,
+    "question_group": "q1"
+  },
+  {
+    "preset": "local",
+    "variant": "no_prenorm",
+    "learning_rate": 0.03,
+    "question_group": "q1"
+  },
+  {
+    "preset": "local",
+    "variant": "no_residuals",
+    "learning_rate": 0.03,
+    "question_group": "q1"
+  },
+  {
+    "preset": "local",
+    "variant": "no_mlp",
+    "learning_rate": 0.03,
+    "question_group": "q1"
+  },
+  {
+    "preset": "local",
+    "variant": "no_attention",
+    "learning_rate": 0.03,
+    "question_group": "q1"
+  },
+  {
+    "preset": "local",
+    "variant": "no_rope",
+    "learning_rate": 0.03,
+    "question_group": "q1"
+  },
+  {
+    "preset": "local",
+    "variant": "mixed_residual",
+    "learning_rate": 0.03,
+    "question_group": "q2"
+  },
+  {
+    "preset": "local",
+    "variant": "mixed_residual",
+    "learning_rate": 0.0001,
+    "question_group": "q2"
+  },
+  {
+    "preset": "local",
+    "variant": "reference",
+    "learning_rate": 0.0001,
+    "question_group": "q2"
+  }
+]

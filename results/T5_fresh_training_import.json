@@ -1,0 +1,6 @@
+{
+  "check": "fresh_environment_no_reference_no_torch",
+  "returncode": 0,
+  "stdout": "{'mlx': '0.32.4', 'numpy': '2.5.4', 'wandb': '0.31.0', 'matplotlib': '3.11.2'}\n{\"index\": 1, \"total\": 1, \"command\": [\"/Users/chinmay/Documents/Codex/2026-07-16/can/dl-alchemy-mac/.build/T5-relocated-checkout/.venv/bin/python\", \"-m\", \"mlx_port.run\", \"--preset\", \"local\", \"--device\", \"gpu\", \"--data-dir\", \"data/dclm\", \"--output-dir\", \"runs/popquiz\", \"--wandb\", \"online\", \"--question-group\", \"q1\", \"--variant\", \"reference\", \"--model-name\", \"d4\", \"--learning-rate\", \"0.003\", \"--num-epochs\", \"1.0\", \"--batch-size\", \"64\", \"--num-micro-batches\", \"8\", \"--num-evals\", \"4\", \"--warmup-percent\", \"0.01\", \"--weight-decay\", \"0.1\", \"--grad-norm\", \"1.0\", \"--dropout\", \"0.0\", \"--data-seed\", \"42\", \"--model-seed\", \"42\", \"--beta1\", \"0.9\", \"--beta2\", \"0.95\", \"--lr-schedule\", \"linear\", \"--precision\", \"mp\", \"--num-train-sequences\", \"20480\", \"--eval-interval\", \"null\", \"--compiled\", \"--chunk-size\", \"1024\", \"--boundary\", \"micro\", \"--no-checkpoint\", \"--log-every\", \"10\", \"--verification-context\", \"1024\"], \"run_dir\": \"runs/popquiz/reference-model-d4-lr0.003-tok20971520-evals4-accum8-62708bc12a\"}\n",
+  "stderr": ""
+}

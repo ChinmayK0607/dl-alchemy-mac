@@ -1,0 +1,29 @@
+usage: sweep.py [-h] [--configs CONFIGS] [--preset {local,smoke,reference}]
+                [--smoke] [--depths DEPTHS] [--learning-rates LEARNING_RATES]
+                [--schedules SCHEDULES] [--dropouts DROPOUTS]
+                [--device {cpu,gpu}] [--data-dir DATA_DIR]
+                [--output-dir OUTPUT_DIR] [--results RESULTS]
+                [--timeout TIMEOUT] [--max-steps MAX_STEPS]
+                [--verification-context VERIFICATION_CONTEXT]
+                [--verification-val-sequences VERIFICATION_VAL_SEQUENCES]
+
+Sequential, isolated real-data runs; one JSON result per config, including
+errors.
+
+options:
+  -h, --help            show this help message and exit
+  --configs CONFIGS     JSON list of TrainConfig override objects
+  --preset {local,smoke,reference}
+  --smoke               One smoke preset, <3 minute GPU pipeline check
+  --depths DEPTHS
+  --learning-rates LEARNING_RATES
+  --schedules SCHEDULES
+  --dropouts DROPOUTS
+  --device {cpu,gpu}
+  --data-dir DATA_DIR
+  --output-dir OUTPUT_DIR
+  --results RESULTS
+  --timeout TIMEOUT     Seconds per config; errors/timeouts continue
+  --max-steps MAX_STEPS
+  --verification-context VERIFICATION_CONTEXT
+  --verification-val-sequences VERIFICATION_VAL_SEQUENCES
